@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Website</h1>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+    </div>
+    
+    <ul id="menu" class="menu-hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- Add your home page content here -->
+        <h2>Home</h2>
+        <p>This is the home page.</p>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        </script>
+        
+</body>
+</html>
