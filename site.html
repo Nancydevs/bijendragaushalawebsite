@@ -1,39 +1,105 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="header">
-        <h1>Welcome to My Website</h1>
-    </div>
-    <div class="menu-icon" onclick="toggleMenu()">
-        &#9776;
-    </div>
-    
-    <ul id="menu" class="menu-hidden">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="expertise.html">Expertise</a></li>
-        <li><a href="blog.html">Blog</a></li>
-    </ul>
 
-    <div class="container">
-        <!-- Add your home page content here -->
-        <h2>Home</h2>
-        <p>This is the home page.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijendra Gaushala</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            if (menu.style.display === "none") {
-                menu.style.display = "block";
-            } else {
-                menu.style.display = "none";
-            }
-        }
-        </script>
+    <!-- Icon on the left side -->
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135495317442277437/photo_2023-06-07_10-55-49.jpg" alt="Logo">
+      <figcaption>Revolutionizing farm and farming</figcaption>
+    </div>
+
+    <!-- Menu Bar -->
+    <nav id="navbar" class="desktop-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Middle Section - Image Carousel -->
+  <main>
+    <div class="slideshow-container">
+
+      <!-- First Image -->
+      <div class="Containers">
+        <div class="MessageInfo">1 / 6</div>
+        <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135505746025525410/Add_a_little_bit_of_body_text_1.png" style="width:100%">
         
+      </div>
+
+      <!-- Second Image -->
+      <div class="Containers">
+        <div class="MessageInfo">2 / 6</div>
+        <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135505746390425600/Add_a_little_bit_of_body_text_2.png" style="width:100%">
+        
+      </div>
+
+      <!-- Third Image -->
+      <div class="Containers">
+        <div class="MessageInfo">3 / 6</div>
+        <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135505746755334174/Add_a_little_bit_of_body_text_3.png" style="width:100%">
+       
+      </div>
+      <div class="Containers">
+        <div class="MessageInfo">4 / 6</div>
+        <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135505751952080936/Add_a_little_bit_of_body_text_4.png" style="width:100%">
+       
+      </div><div class="Containers">
+        <div class="MessageInfo">5 / 6</div>
+        <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135505752379887616/Add_a_little_bit_of_body_text_5.png" style="width:100%">
+       
+      </div><div class="Containers">
+        <div class="MessageInfo">6 / 6</div>
+        <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135505752753176657/Add_a_little_bit_of_body_text.png" style="width:100%">
+       
+      </div>
+      <!-- Add more image-slides as needed -->
+
+      <!-- Back and forward buttons -->
+    
+    </div>
+    <br>
+
+    <!-- The circles/dots -->
+    <div style="text-align:center">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+      <span class="dots" onclick="currentSlide(3)"></span>
+      <span class="dots" onclick="currentSlide(4)"></span>
+      <span class="dots" onclick="currentSlide(5)"></span>
+      <span class="dots" onclick="currentSlide(6)"></span>
+      <!-- Add more dots as needed -->
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>Insert your footer content here.</p>
+      <p>You can add multiple paragraphs and customize it as you like.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
+
 </html>
