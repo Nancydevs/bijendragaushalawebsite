@@ -391,7 +391,7 @@ header {
 
 .special-image-container1 img {
   width: 100%; /* Make the image fill the container's width */
-  height: auto; /* Let the height adjust to maintain aspect ratio */
+  height: 100%; /* Let the height adjust to maintain aspect ratio */
   object-fit: cover;
   padding:10px;
    /* Crop and scale the image to fit the container */
