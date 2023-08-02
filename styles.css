@@ -379,13 +379,17 @@ header {
 
 .special-image-container1 {
   position: relative;
+  left:50px;
+  right:50px;
+  
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.57);
   width: 400px; 
   /* Set the same width as the text box */
   max-width: 100%; /* Ensure it doesn't exceed the screen width */
-  height: 30%; /* Set a fixed height to maintain aspect ratio */
+  height: 50%; /* Set a fixed height to maintain aspect ratio */
   overflow: hidden; 
+ 
   /* Hide any excess content that may overflow */
 }
 
@@ -393,7 +397,7 @@ header {
   width: 100%; /* Make the image fill the container's width */
   height: 100%; /* Let the height adjust to maintain aspect ratio */
   object-fit: cover;
-  padding:10px;
+  
    /* Crop and scale the image to fit the container */
 }
 
@@ -402,7 +406,7 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 25%; /* Set the same height as the text box */
+  height: 50%; /* Set the same height as the text box */
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -414,7 +418,7 @@ header {
 
 .special-text-overlay1 {
   position: absolute;
-  bottom: 10px; /* Adjust the vertical position */
+  bottom: 0px; /* Adjust the vertical position */
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
@@ -451,12 +455,28 @@ header {
   border: 0;
 }
 .contact-section{ 
+  text-align: center;
   width: 90%; /* Set the desired width */
   max-width: 100%; /* Ensure it doesn't exceed the screen width */
   background-color: #fff7f7;
   padding: 20px;
   margin: 20px auto;
 
+}
+.text-box1
+{ font-size:xx-large;
+  text-align: center;
+color: #7A7A7A;
+padding-bottom: 50px;
+margin-left: 50px;
+margin-right: 50px;
+}
+.special-image-container2
+{  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  padding-bottom: 50px;
 
 }
 
