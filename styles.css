@@ -1,8 +1,5 @@
 
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Add your existing CSS styles here */
 
@@ -10,7 +7,9 @@ body, h1, h2, h3, p, ul, li {
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
+ 
 }
+
 
 /* Hide the menu initially */
 .hamburger {
@@ -371,28 +370,39 @@ header {
   }
 }
 .text-box {
-  width: 400px; /* Set the desired width */
+  width: 90%; /* Set the desired width */
   max-width: 100%; /* Ensure it doesn't exceed the screen width */
   background-color: #fff7f7;
   padding: 20px;
-  
   margin: 20px auto; /* Center the text box horizontally */
 }
+
 .special-image-container1 {
   position: relative;
-  left: 130px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.57);
-  margin: 10px 20px 30px 40px;
+  width: 400px; 
+  /* Set the same width as the text box */
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  height: 30%; /* Set a fixed height to maintain aspect ratio */
+  overflow: hidden; 
+  /* Hide any excess content that may overflow */
+}
+
+.special-image-container1 img {
+  width: 100%; /* Make the image fill the container's width */
+  height: auto; /* Let the height adjust to maintain aspect ratio */
+  object-fit: cover;
+  padding:10px;
+   /* Crop and scale the image to fit the container */
 }
 
 .special-overlay1 {
   position: absolute;
-  top: 400;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 28%;
+  height: 25%; /* Set the same height as the text box */
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -404,13 +414,13 @@ header {
 
 .special-text-overlay1 {
   position: absolute;
-  top: 90%;
+  bottom: 10px; /* Adjust the vertical position */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
   text-align: center;
-  padding: 0px;
+  padding: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -418,6 +428,13 @@ header {
 .special-image-container1:hover .special-text-overlay1 {
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .special-text-overlay1 {
+    bottom: 0; /* Adjust the vertical position for mobile */
+  }
+}
+
+
 .map-container {
   position: relative;
   padding-bottom: 56.25%; /* for a 16:9 aspect ratio */
@@ -433,32 +450,41 @@ header {
   height: 100%;
   border: 0;
 }
+.contact-section{ 
+  width: 90%; /* Set the desired width */
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  background-color: #fff7f7;
+  padding: 20px;
+  margin: 20px auto;
 
 
+}
 
-  
-  /* Footer styles */
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    color:#e3e3e3;
-    background-color: #333;
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  color: #e3e3e3;
+  background-color: #333;
 }
 
 .footer-section {
-    flex: 1 0 20%;
-    margin: 10px;
-    padding: 20px;
-    background-color: #333;
+  flex: 1 0 20%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #333;
 }
 
 @media (max-width: 600px) {
-    .footer-section {
-        flex: 1 0 100%;
-    }
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    flex: 1 0 100%;
+  }
 }
 
-  /* Add more styles and customize as per your requirement */
+
   
