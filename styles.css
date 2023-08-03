@@ -468,8 +468,9 @@ header {
   text-align: center;
 color: #7A7A7A;
 padding-bottom: 50px;
-margin-left: 50px;
-margin-right: 50px;
+margin-left: 200px;
+margin-right: 100px;
+
 }
 .special-image-container2
 {  display: block;
@@ -479,6 +480,43 @@ margin-right: 50px;
   padding-bottom: 50px;
 
 }
+.special-image-container22 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 500px;
+  height: 400px;
+  padding-bottom: 50px;
+  
+}
+.my-table {
+
+    margin: 50px auto;
+    width: 80%;
+}
+
+
+
+.my-table th, .my-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.my-table th {
+  background-color: #f2f2f2;
+}
+
+.my-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .my-table th, .my-table td {
+    font-size: 10px;
+  }
+}
+
 
 footer {
   display: flex;
