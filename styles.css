@@ -463,6 +463,26 @@ header {
   margin: 20px auto;
 
 }
+body, .containerlayout {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* This centers the child elements horizontally */
+  align-items: center; /* This centers the child elements vertically */
+  min-height: 100vh; /* This makes sure your container takes up at least the full height of the viewport */
+  overflow-x: hidden; /* This prevents horizontal scrolling if there's any overflow */
+}
+
+.responsive-imagelayout {
+  display: block;
+  
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+
+
 .text-box1
 { font-size: small;
   text-align: center;
@@ -525,6 +545,7 @@ footer {
   padding: 20px;
   color: #e3e3e3;
   background-color: #333;
+  overflow-x: hidden;
 }
 
 .footer-section {
@@ -532,6 +553,7 @@ footer {
   margin: 10px;
   padding: 20px;
   background-color: #333;
+  overflow-x: hidden;
 }
 
 @media (max-width: 600px) {
