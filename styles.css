@@ -495,7 +495,7 @@ margin-right: 10px;
   padding: 0;
   display: flex;
   justify-content: center; /* This centers the child elements horizontally */
-  align-items: center; /* This centers the child elements vertically */
+   /* This centers the child elements vertically */
   min-height: 100vh; /* This makes sure your container takes up at least the full height of the viewport */
   overflow-x: hidden; /* This prevents horizontal scrolling if there's any overflow */
 }
@@ -549,15 +549,18 @@ footer {
   margin: 10px;
   padding: 20px;
   background-color: #333;
+  overflow-x: hidden; 
 }
 
 @media (max-width: 600px) {
   footer {
     flex-direction: column;
+    overflow-x: hidden; 
   }
 
   .footer-section {
     flex: 1 0 100%;
+    overflow-x: hidden; 
   }
 }
 
