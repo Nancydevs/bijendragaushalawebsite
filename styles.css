@@ -492,11 +492,10 @@ margin-right: 10px;
 }
 .containerlayout {
   margin: 0;
-  padding: 0;
+  
   display: flex;
   justify-content: center; /* This centers the child elements horizontally */
-   /* This centers the child elements vertically */
-  min-height: 100vh; /* This makes sure your container takes up at least the full height of the viewport */
+  padding: 0 10px;/* This makes sure your container takes up at least the full height of the viewport */
   overflow-x: hidden; /* This prevents horizontal scrolling if there's any overflow */
 }
 
@@ -540,6 +539,8 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #e3e3e3;
   background-color: #333;
 }
@@ -552,14 +553,14 @@ footer {
   overflow-x: hidden; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   footer {
     flex-direction: column;
     overflow-x: hidden; 
   }
 
   .footer-section {
-    flex: 1 0 100%;
+    flex: 1 0 90%;
     overflow-x: hidden; 
   }
 }
