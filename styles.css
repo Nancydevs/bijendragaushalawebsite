@@ -379,27 +379,18 @@ header {
 
 .special-image-container1 {
   position: relative;
-  left:50px;
-  right:50px;
-  padding-bottom: 10px;
-  
-  display: inline-block;
+  padding-bottom: 20px;
+  display: block; /* Block will take the whole line and make centering easier */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.57);
-  width: 400px; 
-  /* Set the same width as the text box */
-  max-width: 100%; /* Ensure it doesn't exceed the screen width */
-  height: 50%; /* Set a fixed height to maintain aspect ratio */
-  overflow-x: hidden; 
- 
-  /* Hide any excess content that may overflow */
+  max-width: calc(100% - 100px); /* Ensure it doesn't exceed the screen width minus the margins */
+  margin: 0 auto; /* This will center the element */
+  height: auto; /* Let the height adjust to maintain aspect ratio */
 }
 
 .special-image-container1 img {
   width: 100%; /* Make the image fill the container's width */
-  height: 100%; /* Let the height adjust to maintain aspect ratio */
-  object-fit: cover;
-  
-   /* Crop and scale the image to fit the container */
+  height: auto; /* Let the height adjust to maintain aspect ratio */
+  object-fit: contain; /* Preserve the aspect ratio */
 }
 
 .special-overlay1 {
@@ -434,8 +425,8 @@ header {
   opacity: 1;
 }
 @media (max-width: 768px) {
-  .special-text-overlay1 {
-    bottom: 0; /* Adjust the vertical position for mobile */
+  .special-image-container1 {
+    max-width: calc(100% - 20px); /* Adjust width for mobile screens */
   }
 }
 
@@ -567,7 +558,11 @@ footer {
     overflow-x: hidden; 
   }
 
+  .footer-section, footer {
+    font-size: 12px;
+  }
 }
+
 
 
   
