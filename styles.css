@@ -381,6 +381,7 @@ header {
   position: relative;
   left:50px;
   right:50px;
+  padding-bottom: 10px;
   
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.57);
@@ -388,7 +389,7 @@ header {
   /* Set the same width as the text box */
   max-width: 100%; /* Ensure it doesn't exceed the screen width */
   height: 50%; /* Set a fixed height to maintain aspect ratio */
-  overflow: hidden; 
+  overflow-x: hidden; 
  
   /* Hide any excess content that may overflow */
 }
@@ -560,9 +561,12 @@ footer {
   }
 
   .footer-section {
-    flex: 1 0 90%;
+    flex: 1 0 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden; 
   }
+
 }
 
 
