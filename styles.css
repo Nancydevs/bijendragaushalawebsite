@@ -259,7 +259,10 @@ header {
   position: relative;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.57);
-  margin: 10px 20px 30px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .special-overlay {
