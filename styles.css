@@ -469,7 +469,7 @@ header {
 .text-box1 {
   font-size: small;
   text-align: center;
-  color: #7A7A7A;
+  color: #000000;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-right: 20px;
@@ -604,6 +604,53 @@ input[type=submit]:hover {
   }
 }
 
+   
+      
+      .gallery {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%; /* Adjust the width here */
+      }
+      
+      .gallery-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+      }
+      
+      .slide {
+        flex: 0 0 33.333%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .slide img {
+        width: 100%;
+        object-fit: cover;
+      }
+      
+      .gallery-btn {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        z-index: 1;
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .slide {
+          flex: 0 0 100%;
+        }
+      
+        .gallery-container {
+          width: 600%; /* 6 slides for mobile */
+        }
+      }
+      
 
 
 
