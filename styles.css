@@ -375,6 +375,13 @@ header {
   padding: 20px;
   margin: 20px auto; /* Center the text box horizontally */
 }
+.text-boxc {
+  width: 90%; /* Set the desired width */
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 40px auto; /* Center the text box horizontally */
+}
 
 .special-image-container1 {
   position: relative;
@@ -568,7 +575,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  margin:70px;
+  margin:30px;
 }
 .icon-wrapper {
   display: flex;
