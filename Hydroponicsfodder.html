@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijendra Gaushala</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+  <!-- Header Section -->
+  <header>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <!-- Icon on the left side -->
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/1121364562566971444/1135495317442277437/photo_2023-06-07_10-55-49.jpg" alt="Logo">
+      <figcaption>Revolutionizing farm and farming</figcaption>
+    </div>
+    
+    <!-- Menu Bar -->
+    <nav id="navbar" class="desktop-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Ourgaushala.html">Our Gaushala</a></li>
+        <li><a href="OurServices.html">Our Services</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="Hydroponicsfodder.html">Hydroponics Fodder</a></li>
+        <li><a href="Hydroponicssetup.html">Hydroponics Setups</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div class="text-boxc">
+        <p style="text-align: center; font-size: 30px;"><strong>Fodder Production Unit For Cows</strong></p></div>
+        
+     
+    <style>
+   
+      
+      .gallery {
+        display: flex;
+        margin-left: 100px;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        width: 80%; /* Adjust the width here */
+      }
+      
+      .gallery-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+      }
+      
+      .slide {
+        flex: 0 0 33.333%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .slide img {
+        width: 100%;
+        object-fit: cover;
+      }
+      
+      .gallery-btn {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        z-index: 1;
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .slide {
+          flex: 0 0 100%;
+        }
+      
+        .gallery-container {
+          width: 600%; /* 6 slides for mobile */
+        }
+      }
+      </style>
+        <div class="gallery" >
+            <button class="gallery-btn prev" onclick="move(-1)">&#10094;</button>
+            <div class="gallery-container">
+                <!-- Add your image sources here -->
+                <div class="slide"><img src="assests/hydroponicsfodder2.png" alt="Image 1"></div>
+                <div class="slide"><img src="assests/hydroponicsfodder3.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="assests/hydroponicsfooder4.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="assests/greennethouse.png" alt="Image 4"></div>
+                <div class="slide"><img src="assests/hydroponicsfooder6.jpg" alt="Image 5"></div>
+                <div class="slide"><img src="assests/hydroponicsfoodder5.jpg" alt="Image 6"></div>
+            </div>
+            <button class="gallery-btn next" onclick="move(1)">&#10095;</button>
+        </div>
+        <script>
+       var slideIndex = 0;
+    var totalSlides = 6; // Total number of slides
+
+    function move(n) {
+      slideIndex += n;
+      if (slideIndex < 0) {
+        slideIndex = totalSlides - 1;
+      } else if (slideIndex >= totalSlides) {
+        slideIndex = 0;
+      }
+      updateSlidePosition();
+    }
+
+    function updateSlidePosition() {
+      var translateX = -slideIndex * (100 / totalSlides); // Adjust the percentage for each slide
+      document.querySelector(".gallery-container").style.transform = "translateX(" + translateX + "%)";
+    }
+
+    updateSlidePosition();
+            </script>
+            <div class="text-box1">
+                <p style="text-align: left;">1. Fodder is ready in 7 days. <br>
+          
+                  2. 1 Kg seeds produce 10 kg of green fodder. <br>
+                  
+                  3. One cattle needs 20-25 kg of fodder. <br>
+                  
+                  4. Roots and Seeds are consumed along with the green fodder (it gets wastes usually).<br>
+                  
+                  5. Sprouted seeds are better for cattle health. <br>
+                  
+                  6. Minimum water consumption.<br></p></div>
+                  <iframe style="text-align: center;" width="560" height="315" src="3PVEkrrIZzM&t=86s" frameborder="0" allowfullscreen></iframe>
+<style>
+    /* Center the button horizontally and vertically */
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh; /* Set the height of the container to the full viewport height */
+        margin: 0; /* Remove default body margin */
+    }
+
+    /* Customize the button appearance with CSS */
+    .whatsapp-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #25D366; /* Change the background color to your preferred color */
+        color: #fff; /* Change the text color to your preferred color */
+        text-decoration: none;
+        border-radius: 25px; /* Add a curved radius to the button */
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the button */
+    }
+</style>
+<script>
+    function openWhatsApp() {
+        // Replace "+918887599595" with your actual WhatsApp Business phone number
+        var phoneNumber = "+918887599595";
+        // Replace the message with your desired pre-filled message
+        var message = "Your Budget:... Your  requirements:.... .";
+        // Create the WhatsApp URL with the phone number and pre-filled message
+        var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        // Open the WhatsApp chat window with the pre-filled message
+        window.open(whatsappURL, '_blank');
+        // Display a message to the user
+        alert("Your Budget:... Your  requirements:.... ");
+    }
+</script>                 
+<div class="button-container">
+    <!-- Call the openWhatsApp() function when the button is clicked -->
+    <a href="javascript:void(0);" onclick="openWhatsApp()" class="whatsapp-button">Get a Quote on WhatsApp</a>
+</div>
+<div class="text-box1">
+    <p style="text-align: center; font-size: 20px;"><strong>Specification of Fodder</strong></p></div>
+          
+<table class="my-table">
+
+<tr>
+<th>Parameters</th>
+<th>Conventional land-based fodder cultivations</th>
+<th>Hydroponics system</th>
+</tr>
+
+<tr>
+<td>Fodder production in days</td>
+<td>65-70 days</td>
+<td>7 days</td>
+</tr>
+<tr>
+<td>Area required per day</td>
+<td>One ha land to produce 600 kg</td>
+<td>50 sq mt to produce 600 kg per day</td>
+</tr>
+<tr>
+<td>Water requirement</td>
+<td>Very high at 30 litres per kg of green fodder</td>
+<td>Minimal at just 1.5 to 3 litres per kg of green fodder</td>
+</tr>
+<tr>
+<td>Soil fertility</td>
+<td>Essential</td>                       
+<td>Not essential</td>
+</tr>
+<tr>
+<td>Fertilizer application</td>
+<td>Required</td>
+<td>Not Required</td>
+</tr>
+<tr>
+<td>Fodder yield</td>
+<td>Dependent on environment, cultivation practices, etc</td>
+<td>No required climatic conditions</td>
+</tr>
+<tr>
+<td>Labour requirement</td>
+<td>Intense labour Required</td>
+<td>Not Required</td>
+</tr>
+<tr>
+<td>Fencing and farm</td>
+<td>Required</td>
+<td>Not required - can be undertaken in small shed or even under shade net</td>
+</tr>
+<tr>
+<td>Green fodder utilization</td>
+<td>Significant wastage</td>
+<td>Almost no wastage</td>
+</tr>
+</table>
+                 
+                  
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-section">
+      <h1>Bijendra Gaushala</h1>
+      <h3>Every family deserves a cow</h3>
+      <p>Our efforts are purely directed towards conserving nature by conserving cow and promoting profitable dairy farm by blending the wisdom of our ancestors with innovation.</p>
+  </div>
+  <div class="footer-section">
+    <h2>Stay connected</h2>
+    <h5>Contact Details</h5>
+      <p>Email Id : bijendragaushalapvtltd@gmail.com
+
+        Phone no. : 9616910859
+        8887599595
+        Address: A-2, Akash Villa,
+        Sector C LDA Colony, Kanpur Road Lucknow
+        226012</p>
+        
+        <p>LinkedIn :<a href="https://www.linkedin.com/in/bijendra-gaushala-8a6aaa247/">bijendra-gaushala</a> </p>
+        <p>Instagram :<a href="https://www.instagram.com/bijendragaushala/">bijendra-gaushala</a> </p>
+        <p>Facebook :<a href="https://www.facebook.com/profile.php?id=100083813712970">bijendra-gaushala</a> </p>
+        <p>Twitter :<a href="https://twitter.com/bijendrgaushala">bijendra-gaushala</a> </p>
+        <p>Youtube :<a href="https://www.youtube.com/channel/UCFTaUid_bjOHsPDFMYCiHSg">bijendra-gaushala</a> </p>
+  </div>
+  <div class="footer-section">
+    <h3>Explore</h3>
+      <p>About us
+       :<a href="https://www.tofler.in/bijendra-gaushala-private-limited/company/U01200UP2022PTC168157"> https://www.tofler.in/bijendra-gaushala-private-limited/company/U01200UP2022PTC168157</a>
+       </p>
+  </div>
+  
+  </footer>
+
+  
+</html>

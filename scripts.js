@@ -16,6 +16,27 @@ function plusSlides(n) {
 function currentSlide(n) {
   SlideShow(slidePosition = n);
 }
+var slideIndex = 0;
+
+function move(n) {
+    slideIndex += n;
+    if (slideIndex < 0) {
+        slideIndex = 0;
+    } else if (slideIndex > 1) { // only 2 positions are available (0, 1)
+        slideIndex = 1;
+    }
+    updateSlidePosition();
+}
+
+var totalSlides = 2; // 2 positions are available for 3 visible slides each
+
+function updateSlidePosition() {
+    var translateX = -slideIndex * 33.333; // Move by one-third of the container
+    document.querySelector(".gallery-container").style.transform = "translateX(" + translateX + "%)";
+}
+
+updateSlidePosition();
+
 
 function SlideShow(n) {
   var i;
