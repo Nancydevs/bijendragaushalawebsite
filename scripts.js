@@ -3,6 +3,7 @@ function toggleMenu() {
   navbar.classList.toggle("open");
 }
 
+
 var slidePosition = 1;
 SlideShow(slidePosition);
 
@@ -34,3 +35,4 @@ function SlideShow(n) {
   autoSlideInterval = setInterval(function() { plusSlides(1); }, 3000);
 }
 var autoSlideInterval = setInterval(function() { plusSlides(1); }, 3000);
+

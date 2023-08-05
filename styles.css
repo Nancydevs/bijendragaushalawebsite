@@ -570,6 +570,34 @@ input[type=submit]:hover {
   padding: 20px;
   margin:70px;
 }
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100px; /* Adjust as needed */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon-container {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
 
 
 footer {
@@ -577,8 +605,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+ 
   color: #e3e3e3;
   background-color: #333;
 }
