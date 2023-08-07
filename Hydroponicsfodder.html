@@ -32,7 +32,7 @@
         <li><a href="OurProducts.html">Our Products</a></li>
         <li><a href="ContactUs.html">Contact Us</a></li>
         <li><a href="Hydroponicsfodder.html">Hydroponics Fodder</a></li>
-        <li><a href="Hydroponicssetup.html">Hydroponics Setups</a></li>
+        
       </ul>
     </nav>
   </header>
@@ -183,7 +183,59 @@
  <div class="special-overlay"></div>
  <p class="special-text-overlay"><span style="color: #FFA41B; font-weight: bold;">UTTAR PRADESH</span><br>GORKHPUR<br>100 SQM<br>HYDROPONICS FOODER UNIT IN NET HOUSE</p>
 </div>               
+ <script>var slideIndex = 0;
+  var totalSlides = 8; // Total number of slides
   
+  function move(n) {
+  slideIndex += n;
+  if (slideIndex < 0) {
+   slideIndex = totalSlides - 1;
+  } else if (slideIndex >= totalSlides) {
+   slideIndex = 0;
+  }
+  updateSlidePosition();
+  }
+  
+  function updateSlidePosition() {
+  var translateX = -slideIndex * (100 / totalSlides); // Adjust the percentage for each slide
+  document.querySelector(".gallery-container").style.transform = "translateX(" + translateX + "%)";
+  }
+  
+  updateSlidePosition();
+       
+  var slidePosition = 1;
+  SlideShow(slidePosition);
+  
+  // Forward/Back controls
+  function plusSlides(n) {
+    SlideShow(slidePosition += n);
+  }
+  
+  // Image controls
+  function currentSlide(n) {
+    SlideShow(slidePosition = n);
+  }
+  var slideIndex = 0;
+  
+  function move(n) {
+      slideIndex += n;
+      if (slideIndex < 0) {
+          slideIndex = 0;
+      } else if (slideIndex > 3) { // only 2 positions are available (0, 1)
+          slideIndex = 1;
+      }
+      updateSlidePosition();
+  }
+  
+  var totalSlides = 2; // 2 positions are available for 3 visible slides each
+  
+  function updateSlidePosition() {
+      var translateX = -slideIndex * 33.333; // Move by one-third of the container
+      document.querySelector(".gallery-container").style.transform = "translateX(" + translateX + "%)";
+  }
+  
+  updateSlidePosition();
+  </script> 
 
 
 </main>

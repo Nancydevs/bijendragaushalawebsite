@@ -4,25 +4,7 @@ function toggleMenu() {
 }
 
 
-var slideIndex = 0;
-var totalSlides = 8; // Total number of slides
 
-function move(n) {
-slideIndex += n;
-if (slideIndex < 0) {
- slideIndex = totalSlides - 1;
-} else if (slideIndex >= totalSlides) {
- slideIndex = 0;
-}
-updateSlidePosition();
-}
-
-function updateSlidePosition() {
-var translateX = -slideIndex * (100 / totalSlides); // Adjust the percentage for each slide
-document.querySelector(".gallery-container").style.transform = "translateX(" + translateX + "%)";
-}
-
-updateSlidePosition();
      
 var slidePosition = 1;
 SlideShow(slidePosition);
