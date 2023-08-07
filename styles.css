@@ -651,7 +651,7 @@ input[type=submit]:hover {
         }
       }
      .call-button {
-        display: inline-block;
+        display: relative;
         justify-content: left;
         background-color: #4CAF50; /* Green color */
         color: #fff; /* Text color (white) */
@@ -659,7 +659,7 @@ input[type=submit]:hover {
         padding: 10px 30px; /* Add padding to create a rectangle */
         border-radius: 10px; /* Round border */
         margin-left: 10px; 
-        float: left;
+        
         /* Add some space from the left edge of the page */
       
       }
