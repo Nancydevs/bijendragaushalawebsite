@@ -37,7 +37,84 @@
     </nav>
   </header>
 <main>
-   
+   <h1>Click here to shop Direclty</h1>
+  
+
+   <div class="containercall" style="text-align: center;">
+    <div class="call-button" >
+      <a  href="https://www.indiamart.com/bijendra-gaushala/">Shop Now</a>
+    </div>
+    </div>
+    <h1>Call Us to Know more</h1>
+   <div class="containercall">
+    <div class="call-button">
+      <a href="tel:+919616910859">Call Us</a>
+    </div>
+    </div>
+    <h1>WhatsApp Us Your Requirement</h1>
+    <style>
+      .banner {
+        position: fixed;
+        bottom: 0px;
+        right: 20px;
+        left:20px;
+        background-color: #128C7E;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+      .banner.fullscreen {
+      top: 0; /* expand to full screen */
+      padding: 100px 15px; /* increase padding */
+  }
+  
+      .banner a {
+        color: white;
+        text-decoration: none;
+      }
+  
+      .banner button {
+        background-color: #ffffff;
+        border: none;
+        color: #128C7E;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 8px;
+        margin: 2px 2px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+  
+      .hidden {
+        display: none;
+      }
+    </style>
+ 
+  
+    <div id="banner" class="banner hidden">
+      <a href="https://wa.me/+918887599595" target="_blank">
+        Get a quote on WhatsApp<br>
+        <strong>Message Now to get Best price</strong>
+      </a>
+      <button id="close">X</button>
+    </div>
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+          document.getElementById('banner').classList.remove('hidden');
+        }, 2000); // 2000 ms = 2 seconds
+  
+        document.getElementById('close').addEventListener('click', function() {
+          document.getElementById('banner').classList.add('hidden');
+        });
+      }
+    </script>
 
 
 

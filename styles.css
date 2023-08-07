@@ -651,14 +651,14 @@ input[type=submit]:hover {
         }
       }
      .call-button {
-        display: relative;
-        justify-content: left;
+        display: inline-block;
+        
         background-color: #4CAF50; /* Green color */
         color: #fff; /* Text color (white) */
         text-decoration: none;
         padding: 10px 30px; /* Add padding to create a rectangle */
         border-radius: 10px; /* Round border */
-        margin-left: 10px; 
+        margin-left: 20px; 
         
         /* Add some space from the left edge of the page */
       
