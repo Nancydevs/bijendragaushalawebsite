@@ -650,6 +650,30 @@ input[type=submit]:hover {
           width: 600%; /* 6 slides for mobile */
         }
       }
+     .call-button {
+        display: inline-block;
+        justify-content: left;
+        background-color: #4CAF50; /* Green color */
+        color: #fff; /* Text color (white) */
+        text-decoration: none;
+        padding: 10px 30px; /* Add padding to create a rectangle */
+        border-radius: 10px; /* Round border */
+        margin-left: 10px; 
+        float: left;
+        /* Add some space from the left edge of the page */
+      
+      }
+      .call-button a{
+        color: #fff; /* Text color for the link inside the button (if needed) */
+  text-decoration: none;
+      }
+      .containercall {
+        display: flex;
+      }
+      
+      
+      
+      
       
 
 
@@ -670,6 +694,12 @@ footer {
   padding: 20px;
   background-color: #333;
   overflow-x: hidden; 
+}
+a {
+  color: #7bc9f4; /* Replace #ff0000 with the desired color code */
+  /* Additional styles, if needed */
+  text-decoration: none; /* Remove underline from the link */
+   /* Make the link text bold, if desired */
 }
 
 @media (max-width: 500px) {
