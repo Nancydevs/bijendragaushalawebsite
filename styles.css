@@ -342,6 +342,19 @@ header {
   }
 }
 
+/* .image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item img {
+  display: cover;
+  max-width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+} */
 .image-box {
   display: flex;
   flex-direction: column;
@@ -349,11 +362,14 @@ header {
 }
 
 .image-item img {
-  max-width: 100%;
-  height: auto;
+  /* Use a fixed width and height for cropping */
+  width: 400px;      /* Adjust this to your preferred width */
+  height: 300px;     /* Adjust this to your preferred height */ /* Use object-fit to ensure images cover without stretching */
+ /* Other styles */
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
+
 
 .image-item img:hover {
   transform: scale(0.9);
