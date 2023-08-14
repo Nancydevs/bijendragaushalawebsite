@@ -686,6 +686,22 @@ input[type=submit]:hover {
       .containercall {
         display: flex;
       }
+      .blog1 {
+        text-align: left;
+        background-color: #d0dbe1;  /* light grey background */
+        padding: 20px;              /* padding around content */
+        border: 1px solid #e0e0e0; /* grey border */
+        border-radius: 5px;        /* rounded corners */
+        margin: 20px 0;            /* space above and below the blog content */
+    }
+    
+    .blog1 h2 {
+        color: #333;               /* dark text color */
+        font-size: 24px;           /* font size */
+        margin-bottom: 10px;       /* space below the title */
+    }
+    
+   
       
       
       
