@@ -700,7 +700,19 @@ input[type=submit]:hover {
         font-size: 24px;           /* font size */
         margin-bottom: 10px;       /* space below the title */
     }
-    
+    .googleform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust as needed */
+      margin-top: 100px;
+  }
+
+  /* Style the googleform iframe */
+  .googleform iframe {
+      max-width: 100%;
+      border: none;
+  }
    
       
       
