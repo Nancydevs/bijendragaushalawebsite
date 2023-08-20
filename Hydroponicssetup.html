@@ -76,13 +76,18 @@
       body {
         font-size: 14px;
       }
+      
       .product {
-        padding: 10px;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .product-details {
+        text-align: center;
       }
       .product-images {
-        width: 100%;
         margin-bottom: 10px;
       }
+     
       .main-image {
         max-height: 250px;
       }
@@ -147,6 +152,7 @@
     </nav>
   </header>
   <body>
+  
     <div class="product">
       <div class="product-images">
         <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
@@ -158,10 +164,28 @@
         <div class="zoomed-image"></div>
       </div>
       <div class="product-details">
-        <h1>Product Name</h1>
+        <h1>Product 1 Name</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p class="price">$XX.XX</p>
-        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+        <a class="buy-button" href="#">Get Best Quote</a>
+      </div>
+    </div>
+  
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Product 2 Name</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">$XX.XX</p>
+        <a class="buy-button" href="#">Get Best Quote</a>
       </div>
     </div>
     <div class="product">
@@ -175,95 +199,47 @@
         <div class="zoomed-image"></div>
       </div>
       <div class="product-details">
-        <h1>Product Name</h1>
+        <h1>Product 2 Name</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p class="price">$XX.XX</p>
-        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
-      </div>
-    </div>
-    <div class="product">
-      <div class="product-images">
-        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
-        <div class="image-slider">
-          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
-          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
-          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
-        </div>
-        <div class="zoomed-image"></div>
-      </div>
-      <div class="product-details">
-        <h1>Product Name</h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$XX.XX</p>
-        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
-      </div>
-    </div>
-    <div class="product">
-      <div class="product-images">
-        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
-        <div class="image-slider">
-          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
-          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
-          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
-        </div>
-        <div class="zoomed-image"></div>
-      </div>
-      <div class="product-details">
-        <h1>Product Name</h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$XX.XX</p>
-        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
-      </div>
-    </div>
-    <div class="product">
-      <div class="product-images">
-        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
-        <div class="image-slider">
-          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
-          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
-          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
-        </div>
-        <div class="zoomed-image"></div>
-      </div>
-      <div class="product-details">
-        <h1>Product Name</h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$XX.XX</p>
-        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+        <a class="buy-button" href="#">Get Best Quote</a>
       </div>
     </div>
     <script>
-      const mainImage = document.querySelector('.main-image');
-      const thumbnailImages = document.querySelectorAll('.thumbnail');
-      const zoomedImage = document.querySelector('.zoomed-image');
+      const products = document.querySelectorAll('.product');
+      
+      products.forEach(product => {
+        const mainImage = product.querySelector('.main-image');
+        const thumbnailImages = product.querySelectorAll('.thumbnail');
+        const zoomedImage = product.querySelector('.zoomed-image');
   
-      thumbnailImages.forEach(thumbnail => {
-        thumbnail.addEventListener('click', () => {
-          mainImage.src = thumbnail.src;
+        thumbnailImages.forEach(thumbnail => {
+          thumbnail.addEventListener('click', () => {
+            mainImage.src = thumbnail.src;
+          });
         });
-      });
   
-      mainImage.addEventListener('mouseenter', () => {
-        zoomedImage.style.backgroundImage = `url(${mainImage.src})`;
-        zoomedImage.style.display = 'block';
-      });
+        mainImage.addEventListener('mouseenter', () => {
+          zoomedImage.style.backgroundImage = `url(${mainImage.src})`;
+          zoomedImage.style.display = 'block';
+        });
   
-      mainImage.addEventListener('mousemove', e => {
-        const rect = mainImage.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        mainImage.addEventListener('mousemove', e => {
+          const rect = mainImage.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
   
-        const zoomLevel = 2; // Adjust this value to control zoom level
-        zoomedImage.style.backgroundSize = `${rect.width * zoomLevel}px ${rect.height * zoomLevel}px`;
-        zoomedImage.style.backgroundPosition = `-${x * zoomLevel - rect.width}px -${y * zoomLevel - rect.height}px`;
-      });
+          const zoomLevel = 2; // Adjust this value to control zoom level
+          zoomedImage.style.backgroundSize = `${rect.width * zoomLevel}px ${rect.height * zoomLevel}px`;
+          zoomedImage.style.backgroundPosition = `-${x * zoomLevel - rect.width}px -${y * zoomLevel - rect.height}px`;
+        });
   
-      mainImage.addEventListener('mouseleave', () => {
-        zoomedImage.style.display = 'none';
+        mainImage.addEventListener('mouseleave', () => {
+          zoomedImage.style.display = 'none';
+        });
       });
     </script>
   </body>
-
     
     
 
