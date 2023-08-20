@@ -5,13 +5,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bijendra Gaushala</title>
+  <title>Products</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your CSS styles here */
+    .product {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .product-images {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .main-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      cursor: zoom-in;
+    }
+    .image-slider {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .zoomed-image {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border: 2px solid #000;
+      opacity: 1;
+      pointer-events: none;
+      display: none;
+      z-index: 999;
+    }
+    .product-details {
+      flex: 1;
+      padding: 20px;
+    }
+    .description {
+      margin-top: 10px;
+    }
+    .price {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .buy-button {
+        text-align: center;
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0074c2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+        @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+      .product {
+        padding: 10px;
+      }
+      .product-images {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .main-image {
+        max-height: 250px;
+      }
+      .image-slider {
+        display: flex;
+        gap: 5px;
+        overflow-x: auto;
+        align-items: flex-start;
+      }
+      .thumbnail {
+        width: 50px;
+        height: 50px;
+      }
+      .zoomed-image {
+        width: 150px;
+        height: 150px;
+      }
+      .product-details {
+        max-width: 100%;
+        padding: 10px;
+      }
+      .description {
+        margin-top: 5px;
+      }
+      .price {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      .buy-button {
+        margin-top: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
-
-  <!-- Header Section -->
-  <header>
+<header>
     <!-- Hamburger Icon -->
     <div class="hamburger" onclick="toggleMenu()">
       <div class="bar"></div>
@@ -38,15 +147,134 @@
     </nav>
   </header>
   <body>
-    https://docs.google.com/forms/d/e/1FAIpQLSe5BZJ26QaJm3sGTyj9mWkxH0aQVrfhX3f4EmiFCYv389UTQA/viewform?usp=sf_link
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Product Name</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">$XX.XX</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Product Name</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">$XX.XX</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Product Name</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">$XX.XX</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Product Name</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">$XX.XX</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/hydroponicsfodder2.png" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/hydroponicsfodder3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfoodder5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/hydroponicsfooder4.jpg" alt="Thumbnail">
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Product Name</h1>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="price">$XX.XX</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Product%20Name.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+    </div>
+    <script>
+      const mainImage = document.querySelector('.main-image');
+      const thumbnailImages = document.querySelectorAll('.thumbnail');
+      const zoomedImage = document.querySelector('.zoomed-image');
+  
+      thumbnailImages.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+          mainImage.src = thumbnail.src;
+        });
+      });
+  
+      mainImage.addEventListener('mouseenter', () => {
+        zoomedImage.style.backgroundImage = `url(${mainImage.src})`;
+        zoomedImage.style.display = 'block';
+      });
+  
+      mainImage.addEventListener('mousemove', e => {
+        const rect = mainImage.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+  
+        const zoomLevel = 2; // Adjust this value to control zoom level
+        zoomedImage.style.backgroundSize = `${rect.width * zoomLevel}px ${rect.height * zoomLevel}px`;
+        zoomedImage.style.backgroundPosition = `-${x * zoomLevel - rect.width}px -${y * zoomLevel - rect.height}px`;
+      });
+  
+      mainImage.addEventListener('mouseleave', () => {
+        zoomedImage.style.display = 'none';
+      });
+    </script>
   </body>
+
+    
+    
+
+
   <footer>
     <div class="footer-section">
       <h1>Bijendra Gaushala</h1>
       <h3>Every family deserves a cow</h3>
       <p>Our efforts are purely directed towards conserving nature by conserving cow and promoting profitable dairy farm by blending the wisdom of our ancestors with innovation.</p>
   </div>
-  <div class="footer-section">
+ <div class="footer-section">
     <h2>Stay connected</h2>
     <h5>Contact Details</h5>
       <p>Email Id : bijendragaushalapvtltd@gmail.com
@@ -71,3 +299,4 @@
   </div>
 
   </footer>
+</html>

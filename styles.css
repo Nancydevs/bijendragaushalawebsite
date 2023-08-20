@@ -705,7 +705,7 @@ input[type=submit]:hover {
       justify-content: center;
       align-items: center;
       height: 100vh; /* Adjust as needed */
-      margin-top: 50px;
+      margin-top: 100px;
       margin-bottom: 200px;
   }
 
