@@ -55,7 +55,7 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
   clearInterval(autoSlideInterval);
-  autoSlideInterval = setInterval(function() { plusSlides(1); }, 3000);
+  autoSlideInterval = setInterval(function() { plusSlides(1); }, 5000);
 }
-var autoSlideInterval = setInterval(function() { plusSlides(1); }, 3000);
+var autoSlideInterval = setInterval(function() { plusSlides(1); }, 5000);
 
