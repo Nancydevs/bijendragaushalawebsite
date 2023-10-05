@@ -5,7 +5,93 @@
   <title>Green Terrace Green Lucknow </title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
     /* Add your CSS styles here */
     .product {
       display: flex;
@@ -173,6 +259,52 @@
   </header>
 </head>
 <body>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="assests/hydroponicsslide4.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="assests/hydroponicsslide2.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img src="assests/hydroponicsslide.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="assests/hydroponicsslide3.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="assests/hydroponicsslide5.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
     <div class="text-box">
         <h1 style="text-align: center; ">Hydroponics Setups</h1>
@@ -320,15 +452,15 @@
         <p class="description">
             <strong>Color:</strong> White<br>
             <strong>Material:</strong> UPVC<br>
-            <strong>Brand:</strong> Bijendra Agrotech<br>
+            <strong>Brand:</strong> Bijendra Gaushala<br>
             <strong>Size/Dimension:</strong> As per requirement<br>
             <strong>Automation Grade:</strong> Automatic<br>
-            <strong>Model Name/Number:</strong> 8765042421<br>
+            
             <strong>Length:</strong> As per requirement<br>
             <strong>Shape:</strong> Rectangular<br>
             <strong>Capacity:</strong> As much required<br>
           
-          <p>We at Bijendra Agrotech are committed to providing organic vegetables and fruits to every Indian. Our Cocopeat with Hydroponics Farm is designed to cater to the mindset of growth and good food. Whether you want to earn good profits or prioritize your health, our hydroponic farms using cocopeat can be installed on your rooftop or field.</p>
+          <p>We at Bijendra Gaushala are committed to providing organic vegetables and fruits to every Indian. Our Cocopeat with Hydroponics Farm is designed to cater to the mindset of growth and good food. Whether you want to earn good profits or prioritize your health, our hydroponic farms using cocopeat can be installed on your rooftop or field.</p>
           <p>Soilless farming and hydroponics with Cocopeat grow bags offer numerous benefits. These include quicker nutrient absorption due to the high cation exchange capacity of coco peat. This forgiving medium enables easier rewetting and faster water absorption, leading to excellent yield. Made from coconut fibers, sand, and minerals, Cocopeat grow bags are highly water-absorbent, making them perfect for hydroponic farming.</p>
           <p>By adopting soilless farming and hydroponics, farmers can achieve higher yields with fewer resources compared to traditional soil-based methods. The efficiency of our hydroponic setup contributes to sustainable and efficient agricultural practices.</p>
              
@@ -339,8 +471,109 @@
         <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Outdoor%20Hydroponics%20Setup.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
       </div>
     </div> 
-   
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/comeerical hydroponics9.jpg" alt="Product Image">
+        <div class="image-slider">
+          <img class="thumbnail" src="assests/comeerical hydroponics3.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/comeerical hydroponics4.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/comeerical hydroponics5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/comeerical hydroponics7.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/comeerical hydroponics6.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/comeerical hydroponics2.jpg" alt="Thumbnail">
+          
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Commercial Hydroponics</h1>
+        <p class="description">
+            <strong>Color:</strong> White<br>
+            <strong>Material:</strong> UPVC<br>
+            <strong>Brand:</strong> Bijendra Gaushala<br>
+            <strong>Size/Dimension:</strong> As per requirement<br>
+            <strong>Automation Grade:</strong> Automatic<br>
+            
+            <strong>Length:</strong> As per requirement<br>
+            <strong>Shape:</strong> Rectangular<br>
+            <strong>Capacity:</strong> As much required<br>
+          
+          <p>In Bijendra Gaushala we provide commerical hydroponics setup starting from 5000 sq feet. Profitable for future and Sustainable development is guarnteed through our commerical hydroponics setup. We arrange visits to our commerical setups if you are intrested in getting on.</p>
+             
+           
+        <p class="price">Rs 650 / Square Feet<br>
+
+          Minimum Order Quantity: 5700 Square Feet</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Outdoor%20Hydroponics%20Setup.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+      
+    </div> 
+    <div class="product">
+      <div class="product-images">
+        <img class="main-image" src="assests/tower3.jpg" alt="Product Image">
+        <div class="image-slider">
+          
+          <img class="thumbnail" src="assests/tower4.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/tower5.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/tower6.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/tower8.jpg" alt="Thumbnail">
+          <img class="thumbnail" src="assests/tower9.jpg" alt="Thumbnail">
+
+          
+        </div>
+        <div class="zoomed-image"></div>
+      </div>
+      <div class="product-details">
+        <h1>Aeroponics</h1>
+        <p class="description">
+            <strong>Color:</strong> White<br>
+            <strong>Material:</strong> UPVC<br>
+            <strong>Brand:</strong> Bijendra Gaushala<br>
+            <strong>Size/Dimension:</strong> As per requirement<br>
+            <strong>Automation Grade:</strong> Automatic<br>
+            
+            <strong>Length:</strong> As per requirement<br>
+            <strong>Shape:</strong> Cylindrical<br>
+            <strong>Capacity:</strong> As much required<br>
+          
+          <p>In Bijendra Gaushala we provide Aeroponics setup starting from 35000 per tower. Profitable for future and Sustainable development is guarnteed through our Aeroponcis setup. We arrange visits to our setups if you are intrested in getting one.</p>
+             
+           
+        <p class="price">Rs 650 / Square Feet (with polyhouse)<br>
+
+          Minimum Order Quantity: 1 Tower without shed @ 35,000 with growligth number of plant 96</p>
+        <a class="buy-button" href="https://api.whatsapp.com/send?phone=+918887599595&text=I%20am%20interested%20in%20the%20Outdoor%20Hydroponics%20Setup.%20Please%20send%20me%20a%20quote.">Get Best Quote</a>
+      </div>
+    </div> 
     <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
       const products = document.querySelectorAll('.product');
       
       products.forEach(product => {
@@ -377,6 +610,7 @@
   var navbar = document.getElementById("navbar");
   navbar.classList.toggle("open");
 }
+
     </script>
   
 
